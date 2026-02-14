@@ -1,5 +1,7 @@
 # NotivaApp Client
 
+https://full-stack-notiva-app.vercel.app/
+
 The frontend application for **NotivaApp**, a modern, feature-rich note-taking application designed to help you organize your thoughts, tasks, and ideas efficiently.
 
 ## 🚀 Features

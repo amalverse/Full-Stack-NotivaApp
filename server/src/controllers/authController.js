@@ -1,4 +1,5 @@
 import User from "../models/User.js";
+import Note from "../models/Note.js";
 import crypto from "crypto";
 import sendEmail from "../utils/sendEmail.js";
 import {
@@ -527,8 +528,9 @@ const deleteUser = async (req, res) => {
     const user = await User.findById(req.user._id);
 
     if (user) {
+      await Note.deleteMany({ user: user._id });
       await user.deleteOne();
-      res.json({ message: "User removed" });
+      res.json({ message: "User and associated notes removed" });
     } else {
       res.status(404).json({ message: "User not found" });
     }

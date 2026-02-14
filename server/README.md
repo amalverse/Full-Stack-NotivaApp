@@ -1,5 +1,7 @@
 # NotivaApp Server
 
+https://notivaapp-server.onrender.com/
+
 The backend API for **NotivaApp**, responsible for user authentication, data persistence, and business logic for the note-taking platform.
 
 ## 🚀 Features
